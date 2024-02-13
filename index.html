@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburguesas Deliciosas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('fondo.jpg'); 
+      background-size: cover;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #fff200; 
+    }
+
+    
+  </style>
+  
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-white py-5" href="#">Hamburguesas Deliciosas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#menu">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <!-- Sección de Presentación -->
+  <section class="navbar-expand-lg text-center py-5">
+    <div class="container">
+      <h1 class="display-4">¡Las Mejores Hamburguesas!</h1>
+      <p class="lead">Descubre nuestra deliciosa selección de hamburguesas hechas a la parrilla</p>
+  </section>
+  
+   <!-- Sección de Imagen de Carussel-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100" alt="300">
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100" alt="300">
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100" alt="300">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Sección de Menú -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestro Menú</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="hamburguesa-clasica.jpg" class="card-img-top" alt="Hamburguesa 1">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Clásica</h5>
+              <p class="card-text">La hamburguesa de carne de res clásica con todos los ingredientes frescos.</p>
+              <p class="card-text"><strong>Precio:</strong> 150.00lps</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="hamburguesa-de-pollo.jpg" class="card-img-top" alt="Hamburguesa 2">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa de Pollo</h5>
+              <p class="card-text">Jugosa hamburguesa de pollo crujiente con una mezcla de especias secretas.</p>
+              <p class="card-text"><strong>Precio:</strong> 120.00lps</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="hamburguesa-vegetariana.jpg" class="card-img-top" alt="Hamburguesa 3">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Vegetariana</h5>
+              <p class="card-text">Una opción vegetariana sabrosa y saludable hecha con ingredientes frescos.</p>
+              <p class="card-text"><strong>Precio:</strong> 130.00lps</p> <!-- Precio de la hamburguesa -->
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h2 class="text-center mb-4">¡Contáctanos!</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle JS (incluye Popper) y jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
